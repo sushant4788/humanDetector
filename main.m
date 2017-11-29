@@ -4,15 +4,6 @@
 % Step -3: For each of these images, take the HOG features and detect the
 % presence of a human
 
-% numlevels = 5;
-% scale = 0.75;
-% crop001684.png [5][0.9]
-% test4.png[5][0.75]
-% test5.png[7][0.75]
-% test10.png[6][0.8][15];
-% test11.png [6][0.9][25];
-% test12.png[7][0.9][25]
-% test13.png[7][0.9][25]
 numlevels = 5;
 scale = 0.9;
 allowedPercentage = 25;
@@ -55,7 +46,7 @@ for i = 1:numlevels
     winDetAcrossFrames{1,i} = temp.retMat;
 end
 winDetAcrossFrames = winDetAcrossFrames';
-% We have the detected windows we will now map them back to the original
+%Detected windows. Now map them back to the original
 % image
 wScale = scale;
 k = 1;

@@ -1,12 +1,14 @@
+% Formulation of the soft margin primal SVM in terms of a quadratic 
+% optimization problem. 
+
 clc, close all, clear all;
-%
+% Load pos and neg samples 
 positiveSamples = load('posSamples.mat');
 negativeSamples = load('negSamples.mat');
 %positiveSamples = rand(400, 3780);
 %negativeSamples = rand(500, 3780);
 positiveSamples = struct2array(positiveSamples);
 negativeSamples = struct2array(negativeSamples);
-%Consider only the first few training samples as there are errors later
 
 %positiveSamples = positiveSamples(1:400, :);
 %negativeSamples = negativeSamples(1:500, :);
